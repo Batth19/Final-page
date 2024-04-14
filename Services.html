@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Services</title>
+    <style>
+       
+        header {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:rgb(140, 248, 248);
+            color: #333;
+            line-height: 1.6;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 20px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+
+        .grid-item1 {
+            background-image: url('petbath1.jpg');
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            width: 500px;
+            height: 400px;
+            margin-left: auto;
+        }
+        .grid-item2 {
+            background-image: url('haircut.jpg');
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            width: 500px;
+            height: 400px;
+            margin-left: auto;
+        }
+        .grid-item3 {
+            background-image: url('nailtrim.jpg');
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            width: 500px;
+            height: 400px;
+            margin-left: auto;
+        }
+        .grid-item4 {
+            background-image: url('ear.jpg');
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            width: 500px;
+            height: 400px;
+            margin-left: auto;
+        }
+
+        .collapsible {
+            background-color: #777;
+            color: rgb(8, 8, 8);
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: center;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #0a9c6e;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #c6b0b0;
+            border-radius:10px ;
+        }
+        .margen {
+          margin-left:20px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        button:hover {
+            background-color: green;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header><center><h1>Pet Services</h1> </center>
+    <nav>
+        <a href="index.html" style="margin-right:20px; "><button>Blog</button></a>
+        <a href="contact.html" style="margin-right:20px; "><button>Contact Us</button></a></header>
+    </nav>
+        <h2 class="margen">Grooming Services</h2>
+        <br><br>
+   
+    <div class="grid-container">
+        <div class="grid-item1"><b>Basic Bath</div>
+        <div class="grid-item2">Haircut & Styling</div>     
+    </div>
+    <br>
+    <div class="grid-container">
+        <div class="grid-item3">Nail Trimming</div>
+        <div class="grid-item4">Ear Cleaning</b></div>
+    </div>
+
+    <h2 class="margen">Pets Hotel</h2>
+    <button class="collapsible"><b>Accommodation Details</b></button>
+    <div class="content">
+        <p><b>Your furry pals may stay in cozy lodgings at our pets motel. Every room has comfortable mattresses, games, and daily meals. In addition, we provide hikes and plays as forms of amusement and fitness.</b></p>
+    </div>
+
+    <h2 class="margen">Pet Day Camp</h2>
+    <button class="collapsible"><b>Activities</b></button>
+    <div class="content">
+        <ul>
+            <li><b>Trail Hikes</li>
+            <li>Agility Courses</li>
+            <li>Training Workshops</li>
+            <li>Doggy Socialization<b></li>
+        </ul>
+    </div>
+    <button class="collapsible"><b>Schedule</b></button>
+    <div class="content">
+        <p><b>We provide programs all day long at our pet day camp, which is open Monday through Friday. Your pet is available for pickup in the evening after being dropped off in the morning.<b><p>
+   
+        </div>
+    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        
+    </script>
+    <br><br>
+   <footer><p>© 2023 Barinder Singh Batth(000366232) . All rights reserved .</p>
+   </footer>  
+</body>
+</html>
