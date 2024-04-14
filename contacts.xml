@@ -1,0 +1,14 @@
+<contacts>
+    <contact>
+        <type>1. Email Address</type>
+        <value><a href="mailto:info@example.com">barindersinghbatth@gmail.com</a></value>
+    </contact>
+    <contact>
+        <type>2. Mailing Address</type>
+        <value>108 Bell Street, Red Deer, Alberta, Canada, T4R1M8</value>
+    </contact>
+    <contact>
+        <type>3. Phone Number</type>
+        <value><a href="tel:+1234567890">4038727240</a></value>
+    </contact>
+</contacts>
