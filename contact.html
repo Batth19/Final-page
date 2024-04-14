@@ -67,7 +67,7 @@
     </header>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-          // Fetch the contacts from XML file
+          
           fetch('contacts.xml')
           .then(response => response.text())
           .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
